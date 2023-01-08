@@ -1,7 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
 *{
     margin: 0px;
-    padding: 0%;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-bar-one{
@@ -9,6 +12,7 @@
   gap: 20px;
   width:90%;
   align-items: center;
+  gap: 50px;
   
 
 }
@@ -16,27 +20,32 @@
 .nav_bar{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 15px;
     align-items: center;
+    
 
 }
 
 .input-div{
     border: 1px solid black;
     width: 60%;
-    height:50px ;
+    height:45px ;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 20px;
+    gap: 15px;
     
 }
 
 .input-div>input{
   height: 100%;
-  width:80%;
+  width:70%;
   font-size: 16px;
   border: none;
+  margin-left: 5%;
+  
+
 }
 
 input:hover, input:focus{
@@ -58,4 +67,258 @@ input:hover, input:focus{
 .nav-bar-two{
     display: flex;
     gap: 20px;
+}
+
+.image-border{
+    border-right: 1px solid gray ;
+    padding-right: 8px;
+}
+
+.nav_bar_bottom{
+    display: flex;
+    margin-left: 12%;
+    align-items: center;
+    
+}
+#nav_bar_bottom_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.bottom-img{
+   width: 25%;
+
+}
+
+#tools{
+    margin-left: 22% ;
+}
+
+.small-font{
+    font-size: 14px;
+    color: rgb(112, 117, 122);
+    padding: 10px 0px;
+}
+
+.search{
+    width: 40%;
+}
+
+.options{
+    width: 30%;
+}
+
+main{
+    margin-left: 13%;
+}
+
+.heading{
+    display: flex;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    position: relative;
+    
+}
+.CR7{
+    line-height: 36px;
+    font-size: 26px;
+}
+.sub-heading{
+    display: flex; 
+}
+
+.first-button{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+.first-button button{
+    border:1px solid rgb(149, 195, 226);
+    background-color: rgb(204, 224, 237);
+    height: 40px;
+    padding: 12px;
+    border-radius: 20px;
+    color: rgb(0, 81, 255);
+
+}
+
+.options2{
+    width: 9%;
+} 
+
+.section-2{
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.div-one{
+    display: grid;
+    grid-template-areas: 
+    "a a  b"
+    "a a  c"
+    ;
+    width: 44%;
+    gap: 2px;
+    border: 1px solid black;
+
+    
+}
+
+.a{
+    grid-area: a;
+    height: 100%;
+    border-radius: 10px;
+    
+    
+}
+
+.a img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.b{
+    grid-area: b;
+
+    height: 100%;  
+    
+}
+
+.b img{
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.c{
+    grid-area: c;
+    height:100%;
+    object-fit: cover;
+}
+
+.c img{
+    object-fit: cover;
+    width:100%;
+    height: inherit;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.div-two{
+    display: grid;
+    grid-template-areas: 
+    "d d  e f "
+    "d d  g g " 
+    ;
+    width: 44%;
+    gap: 20px;
+    border:1px solid black;
+    margin-left:20px;
+}
+
+.d{
+    grid-area:d;
+    height: inherit;
+    border: 1px solid red;
+    line-height: 22px;
+    border-radius: 20px;
+
+}
+.d-first-image{ 
+    border-radius: 20px 20px 0px 0px;
+    height: 45%;
+    background-image: url(/images/v1.jfif);
+    background-size: cover;
+
+    
+}
+
+.d-text{
+    display: flex;
+    margin: 10px 5px;
+    align-items: center;
+    gap:10px;
+}
+
+#france{
+    width: 10px;
+    height: 10px;
+}
+.sky{
+    font-size: 12px;
+}
+
+.d-text-two{
+ font-size: 14px;
+ margin-left:5px;
+ width:80% ;
+}
+.d-text-three{
+    font-size: 12px;
+    margin-left: 5px;
+
+}
+
+.d-text-four{
+    font-size:12px ;
+    margin-top:20px ;
+    margin-left: 5px;
+}
+
+.e{
+    grid-area: e;
+    border: 1px solid blue;
+    font-size: 14px;
+    padding-bottom: 90%;
+
+}
+
+.f{
+    grid-area: f;
+    border: 1px solid blue;
+    font-size: 14px;
+    height: 100%;
+    padding-bottom: 90%;
+}
+
+.g{
+    grid-area: g;
+    border: 1px solid blue;
+    display: flex;
+    height: 60%;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 20px;
+    
+
+}
+
+.g-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.g-title-div{
+    width: 50%;
+    border: 1px solid green;
+}
+.g-image-div{
+    width: 40%;
+    height: 99%;
+    border: 1px solid red;
+    margin: auto;
+}
+.g-image-div img{
+    width: 100%;
+    object-fit: cover;
+    height: inherit;
 }
